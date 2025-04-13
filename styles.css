@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+
+    --accent-blue: #4591d5; 
+    --accent-yellow: #e7b525;
+    --secondary-grey: #e3e8f0;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    display: grid;
+    grid-template: 1fr 7fr / 1fr 4fr;
+    margin: 0;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 3 / 2;
+    color: white;
+    background-color: var(--accent-blue);
+}
+
+header > div {
+    display: grid;
+} 
+
+main {
+    background-color: var(--secondary-grey);
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+}
+
+.projects-section {
+    grid-row: span 2;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template: 1fr 1fr / repeat(3, 1fr);
+}
+
+.trending-section {
+    grid-area: 2 / 2 / 3 / 3;
+}
